@@ -39,10 +39,18 @@ type SimpleElement struct {
 	value string
 }
 
+func (s *SimpleElement) SetValue(value string) {
+	s.value = value
+}
+
 // A CompoundElement is an Element with children.
 type CompoundElement struct {
 	xml.StartElement
 	children []Element
+}
+
+func (c *CompoundElement) SetValue(elements []Element) {
+	c.children = elements
 }
 
 // A SharedElement is an element with an id.
