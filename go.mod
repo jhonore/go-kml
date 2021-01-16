@@ -8,6 +8,4 @@ require (
 	github.com/twpayne/go-waypoint v0.0.0-20200706203930-b263a7f6e4e8
 )
 
-replace github.com/twpayne/go-kml => github.com/jhonore/go-kml v1.5.1
-
 go 1.13
